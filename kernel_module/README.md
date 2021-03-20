@@ -35,3 +35,9 @@ automatically. Otherwise, simply disconnect and reconnect your X52.
 # Reporting issues
 
 Please report any issues seen as a [Github issue](https://github.com/nirenjan/x52pro-linux/issues).
+
+# Notes
+
+This folder also includes a driver for the X65F HOTAS, but it is untested as of
+this writing. The same build instructions apply, but you will need to run `sudo
+insmod saitek_x65.ko` instead.

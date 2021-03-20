@@ -39,7 +39,7 @@ static void _parse_axis_report(struct input_dev *input_dev, u8 *data)
         {-1, -1},
     };
 
-    u8 hat = (data[14] >> 3) & 0xff;
+    u8 hat = (data[14] >> 3) & 0x0f;
 
     u32 axis = (data[2] << 16) |
                (data[1] <<  8) |
@@ -54,7 +54,7 @@ static void _parse_axis_report(struct input_dev *input_dev, u8 *data)
     input_report_abs(input_dev, ABS_RY, ((data[7] & 0x1) << 8) | data[6]);
     input_report_abs(input_dev, ABS_THROTTLE, ((data[8] & 0x1) << 8) | data[7]);
 
-    input_report_abs(input_dev, ABS_MISC, ((data[15] & 0x7) << 1) & ((data[14] & 0x80) >> 7));
+    input_report_abs(input_dev, ABS_MISC, ((data[15] & 0x7) << 1) | ((data[14] & 0x80) >> 7));
     input_report_abs(input_dev, ABS_MISC + 1, (data[15] >> 3) & 0xf);
 
     input_report_abs(input_dev, ABS_HAT0X, hat_to_axis[hat][0]);

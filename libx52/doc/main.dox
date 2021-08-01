@@ -36,5 +36,6 @@ functions.
 - libx52.h
 - libx52io.h
 - libx52util.h
+- x52d_comm.h
 
 */

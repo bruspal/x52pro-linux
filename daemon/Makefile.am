@@ -30,6 +30,7 @@ x52d_LDFLAGS = @INIH_LIBS@ @PTHREAD_LIBS@ $(WARN_LDFLAGS)
 x52d_LDADD = \
 	lib/pinelog/libpinelog.la \
 	libx52.la \
+	libx52d_comm_common.la \
 	@LTLIBINTL@
 
 x52dconfdir = @sysconfdir@/x52d

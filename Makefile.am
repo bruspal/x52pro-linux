@@ -20,6 +20,7 @@ bin_PROGRAMS =
 check_PROGRAMS =
 lib_LTLIBRARIES =
 check_LTLIBRARIES =
+noinst_LTLIBRARIES =
 pkgconfig_DATA =
 TESTS =
 EXTRA_DIST =
@@ -34,6 +35,7 @@ include libx52/Makefile.am
 include libx52util/Makefile.am
 include libx52io/Makefile.am
 include libusbx52/Makefile.am
+include x52dcomm/Makefile.am
 
 include cli/Makefile.am
 include joytest/Makefile.am

@@ -860,6 +860,7 @@ FILE_PATTERNS          = \
                          libx52.h \
                          libx52io.h \
                          libx52util.h \
+                         x52d_comm.h \
                          x52_cli.c \
                          *.dox
 

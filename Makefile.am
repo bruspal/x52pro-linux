@@ -84,6 +84,7 @@ EXTRA_DIST += \
 	LICENSE \
 	README.md \
 	config.rpath \
+	comp_assert.h \
 	gettext.h \
 	usb-ids.h \
 	po/README.md

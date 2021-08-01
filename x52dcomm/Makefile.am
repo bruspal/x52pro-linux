@@ -27,5 +27,6 @@ libx52d_comm_common_la_LDFLAGS = $(WARN_LDFLAGS)
 
 EXTRA_DIST += \
 	x52dcomm/x52d_comm.h \
+	x52dcomm/x52d_comm_const.h \
 	x52dcomm/x52d_comm_setup.h \
 	x52dcomm/README.md
